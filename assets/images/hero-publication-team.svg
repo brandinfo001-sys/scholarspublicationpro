@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620" role="img" aria-labelledby="t d">
+<title id="t">Researchers preparing an academic manuscript</title><desc id="d">Two publication professionals review a manuscript at a desk with a laptop, journal pages and research notes.</desc>
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#eef0ff"/><stop offset="1" stop-color="#fff3f1"/></linearGradient></defs>
+<rect width="760" height="620" rx="44" fill="url(#g)"/>
+<circle cx="645" cy="90" r="72" fill="#3130BF" opacity=".08"/><circle cx="105" cy="515" r="92" fill="#FF5757" opacity=".08"/>
+<rect x="92" y="107" width="576" height="394" rx="30" fill="#fff" stroke="#dfe2f6" stroke-width="2"/>
+<rect x="126" y="139" width="232" height="26" rx="13" fill="#1D1C70" opacity=".1"/><rect x="126" y="184" width="164" height="12" rx="6" fill="#3130BF" opacity=".15"/>
+<rect x="128" y="222" width="208" height="230" rx="18" fill="#f6f7ff"/>
+<rect x="154" y="250" width="155" height="14" rx="7" fill="#3130BF" opacity=".25"/><rect x="154" y="280" width="126" height="9" rx="4.5" fill="#1D1C70" opacity=".13"/><rect x="154" y="300" width="143" height="9" rx="4.5" fill="#1D1C70" opacity=".13"/><rect x="154" y="320" width="115" height="9" rx="4.5" fill="#1D1C70" opacity=".13"/>
+<rect x="154" y="361" width="68" height="56" rx="10" fill="#3130BF" opacity=".12"/><path d="M169 400l13-18 11 10 15-23" fill="none" stroke="#3130BF" stroke-width="5" stroke-linecap="round"/>
+<!-- researcher left -->
+<circle cx="417" cy="230" r="42" fill="#d89b78"/><path d="M378 220c4-50 76-61 89-8-10-9-18-16-34-18-21-3-37 8-55 26Z" fill="#28243e"/>
+<path d="M363 401c2-91 25-130 59-130 39 0 62 39 66 130Z" fill="#3130BF"/><path d="M392 286c17 18 38 19 56 0l-7 47h-43Z" fill="#fff"/>
+<path d="M382 341c-28 12-48 37-58 72" fill="none" stroke="#d89b78" stroke-width="18" stroke-linecap="round"/>
+<path d="M330 411l-54-20" fill="none" stroke="#d89b78" stroke-width="18" stroke-linecap="round"/>
+<!-- researcher right -->
+<circle cx="557" cy="218" r="37" fill="#a56d52"/><path d="M523 212c5-43 63-50 72-11-14-10-35-14-53-8-7 2-12 8-19 19Z" fill="#151827"/>
+<path d="M505 382c4-78 24-116 54-116 33 0 54 38 59 116Z" fill="#FF5757"/><path d="M531 281c17 15 33 15 50 0l-6 39h-39Z" fill="#fff"/>
+<path d="M515 332c-25 12-41 31-49 58" fill="none" stroke="#a56d52" stroke-width="16" stroke-linecap="round"/>
+<!-- laptop -->
+<path d="M351 393h182l-18-105H371Z" fill="#1D1C70"/><rect x="387" y="303" width="100" height="62" rx="8" fill="#fff" opacity=".92"/><circle cx="437" cy="334" r="14" fill="#3130BF" opacity=".12"/><path d="M431 335h12m-6-6v12" stroke="#3130BF" stroke-width="3" stroke-linecap="round"/>
+<path d="M325 396h235l-18 19H344Z" fill="#0f1028"/>
+<!-- floating journal card -->
+<g transform="translate(498 104) rotate(6)"><rect width="134" height="92" rx="16" fill="#1D1C70"/><text x="18" y="30" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#fff">JOURNAL FIT</text><rect x="18" y="44" width="78" height="7" rx="3.5" fill="#fff" opacity=".4"/><rect x="18" y="59" width="58" height="7" rx="3.5" fill="#fff" opacity=".25"/><circle cx="109" cy="64" r="14" fill="#FF5757"/><path d="m102 64 5 5 10-12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+<!-- base -->
+<rect x="84" y="501" width="592" height="22" rx="11" fill="#1D1C70" opacity=".08"/>
+<g font-family="Arial,sans-serif"><text x="115" y="568" font-size="17" font-weight="700" fill="#1D1C70">Research</text><text x="249" y="568" font-size="17" font-weight="700" fill="#1D1C70">Manuscript</text><text x="416" y="568" font-size="17" font-weight="700" fill="#1D1C70">Journal</text><text x="548" y="568" font-size="17" font-weight="700" fill="#1D1C70">Review</text><path d="M191 562h38m98 0h66m82 0h54" stroke="#FF5757" stroke-width="4" stroke-linecap="round"/></g>
+</svg>

@@ -1,0 +1,15 @@
+(() => {
+  const header=document.querySelector('[data-header]');const menuBtn=document.querySelector('[data-menu-toggle]');const nav=document.querySelector('[data-nav]');const dropdowns=[...document.querySelectorAll('.nav-dropdown')];const toast=document.querySelector('[data-toast]');
+  const updateHeader=()=>header?.classList.toggle('is-scrolled',window.scrollY>8);updateHeader();window.addEventListener('scroll',updateHeader,{passive:true});
+  const closeMenu=()=>{nav?.classList.remove('open');menuBtn?.setAttribute('aria-expanded','false');document.body.classList.remove('nav-open')};
+  menuBtn?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));document.body.classList.toggle('nav-open',open)});
+  dropdowns.forEach(drop=>{const btn=drop.querySelector('.dropdown-toggle');btn?.addEventListener('click',e=>{e.preventDefault();const open=drop.classList.toggle('open');btn.setAttribute('aria-expanded',String(open))})});
+  document.addEventListener('click',e=>{if(!e.target.closest('.nav-dropdown'))dropdowns.forEach(d=>{d.classList.remove('open');d.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded','false')})});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeMenu();dropdowns.forEach(d=>{d.classList.remove('open');d.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded','false')})}});
+  nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+  window.addEventListener('resize',()=>{if(window.innerWidth>860)closeMenu()});
+  document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
+  const showToast=message=>{if(!toast)return;toast.textContent=message;toast.classList.add('show');clearTimeout(showToast._t);showToast._t=setTimeout(()=>toast.classList.remove('show'),4600)};
+  document.querySelectorAll('.mailto-form').forEach(form=>form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const data=new FormData(form);const lines=[];for(const [k,v] of data.entries()){if(!(v instanceof File)&&String(v).trim())lines.push(`${k}: ${String(v).trim()}`)}lines.push('','Sent from the Scholars Publication Pro website.');const subject=form.dataset.formSubject||'Website enquiry';showToast('Opening your email app with the enquiry details pre-filled.');window.location.href=`mailto:info.scholarspublicationpro@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join('\n'))}`;}));
+  const items=document.querySelectorAll('[data-reveal]');if('IntersectionObserver'in window){const o=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in-view');o.unobserve(x.target)}}),{threshold:.12,rootMargin:'0px 0px -30px 0px'});items.forEach(i=>o.observe(i))}else items.forEach(i=>i.classList.add('in-view'));
+})();
